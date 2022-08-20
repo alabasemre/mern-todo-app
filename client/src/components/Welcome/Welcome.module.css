@@ -1,0 +1,51 @@
+.welcome {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: calc(100vh - 73px);
+    background-color: #d3d3ee;
+}
+
+.welcome h1 {
+    color: #000;
+    font-size: 96px;
+    position: absolute;
+    opacity: 0;
+}
+
+.info {
+    animation: rotateWords 9s linear 0s infinite normal;
+}
+
+.name {
+    animation: rotateWords 9s linear 4.6s infinite normal;
+}
+
+@keyframes rotateWords {
+    5% {
+        opacity: 1;
+    }
+    10%,
+    20% {
+        opacity: 1;
+        transform: translateY(45px);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(180px);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .welcome h1 {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .welcome h1 {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: 0;
+}
+
+.container * {
+    width: 50px;
+    height: 50px;
+}
+
+.icon svg {
+    border-radius: 0 !important;
+}
+
+.container *:hover {
+    opacity: 0.95;
+}
+
+.leetcode {
+    background-color: rgba(255, 192, 23, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leetcode img {
+    width: 60%;
+    height: 60%;
+}
+
+@media screen and (max-width: 1365px) {
+    .container {
+        gap: 10px;
+        flex-direction: row;
+        position: fixed;
+        bottom: 0;
+        top: auto;
+        left: 50%;
+
+        margin-left: -100px;
+    }
+}
